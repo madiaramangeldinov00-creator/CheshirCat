@@ -1,0 +1,43 @@
+:root {
+  --white-color: #f9f9fb;
+  --gray-color: #767570;
+  --beige-color: #fae19b;
+  --haki-color: #78973d;
+  --dark-olive-color: #2b341e;
+  --haki-light-color: #dfe7be;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  padding: 0;
+  color: var(--dark-olive-color);
+  font-family: "Nunito", sans-serif;
+  background-color: var(--beige-color);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  color: inherit;
+  font-family: inherit;
+}
