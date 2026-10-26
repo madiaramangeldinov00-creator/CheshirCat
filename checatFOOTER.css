@@ -74,23 +74,41 @@
   min-width: 0;
   align-items: center;
   justify-content: center;
+  justify-self: stretch;
   padding: 24px;
+  transform: translateX(-13%);
   text-align: center;
 }
 
 .footer-heart a {
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 10px;
-  font-size: 16px;
-  font-weight: 700;
+  color: #78b159;
+}
+
+.footer-heart a:hover {
+  color: #78b159;
+}
+
+.footer-heart__caption {
+  font-family: "Rouge Script", cursive;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 1;
 }
 
 .footer-heart svg {
   display: block;
   width: 84px;
   height: 84px;
+}
+
+.footer-heart svg path {
+  fill: #78b159;
 }
 
 @media (max-width: 900px) {
@@ -104,6 +122,7 @@
 
   .footer-heart {
     padding: 12px 20px 24px;
+    transform: none;
   }
 
   .footer-heart a {
