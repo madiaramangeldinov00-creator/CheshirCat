@@ -53,7 +53,7 @@
 }
 
 .footer a:hover {
-  color: var(--haki-color);
+  color: #78973d;
 }
 
 .footer__links > ul li a {
@@ -87,11 +87,11 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  color: #78b159;
+  color: #78973d;
 }
 
 .footer-heart a:hover {
-  color: #78b159;
+  color: #78973d;
 }
 
 .footer-heart__caption {
@@ -108,7 +108,7 @@
 }
 
 .footer-heart svg path {
-  fill: #78b159;
+  fill: #78973d;
 }
 
 @media (max-width: 900px) {
