@@ -1,0 +1,27 @@
+.body{
+    background-color: #fae19b;
+}
+
+
+
+.main_card_container {
+    max-width: 1000px;
+    min-height: 220px;
+
+    margin: auto;
+    margin-top: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: black;
+
+    color: white;
+    
+}
+
+
+.item1{
+    
+}
+
