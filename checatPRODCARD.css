@@ -1,5 +1,33 @@
-.html{
-    background-color: #fae19b;
+.main1_card{
     max-width: 1000px;
     min-height: 220px;
+    margin: auto;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: auto;
+    background-color: black;
+    display: flex;
+    color: white;
+}
+
+.left_card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+}
+
+.right_card{ 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
 }
