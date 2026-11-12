@@ -175,3 +175,68 @@ body {
 .header__search-clear:hover {
     color: var(--dark-olive-color);
 }
+
+/* ===== Мега-меню каталога ===== */
+
+/* Шапка — точка отсчёта для позиции меню */
+.header {
+  position: relative;
+}
+
+/* Меню скрыто по умолчанию */
+.catalog-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);        /* чуть ниже шапки */
+  left: 50%;
+  transform: translateX(-50%);  /* по центру, как ваша шапка */
+  width: calc(100% - 32px);
+  max-width: 1500px;            /* поставьте как у .header__container */
+  padding: 28px 32px;
+  background: #1f2023;
+  border-radius: 24px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+  z-index: 100;
+}
+
+/* Класс is-open добавляет скрипт — меню становится видно */
+.catalog-menu.is-open {
+  display: block;
+}
+
+/* Разделы в колонки */
+.catalog-menu__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 32px;
+}
+
+.catalog-menu__title {
+  margin: 0 0 12px;
+  padding-bottom: 8px;
+  font-size: 20px;
+  border-bottom: 2px solid #7b9a3c;
+}
+
+.catalog-menu__title a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.catalog-menu__list {
+  list-style: none;   /* убираем точки */
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-menu__list a {
+  display: block;
+  padding: 8px 0;
+  color: #c8c8c8;
+  text-decoration: none;
+}
+
+.catalog-menu__title a:hover,
+.catalog-menu__list a:hover {
+  color: #9cc153;
+}
