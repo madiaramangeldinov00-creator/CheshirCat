@@ -6,14 +6,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="checatCOMMON.css">
 	<link rel="stylesheet" href="checatMAIN.css">
+	<script src="checatMAIN.js" defer></script>
 	<title>Document</title>
 </head>
 
 <body>
 	<div class="main">
 		<div class="main__container">
-			<nav class="main__banner">
-				<button class="main__nav-button">
+			<nav class="main__banner" aria-label="Баннеры магазина">
+				<button class="main__nav-button" type="button" data-banner-prev aria-label="Предыдущий баннер">
 					<?xml version="1.0" encoding="utf-8"?>
 					<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
 					<svg width="800px" height="800px" viewBox="-19.04 0 75.803 75.803"
@@ -26,9 +27,20 @@
 					</svg>
 				</button>
 				<div class="main__nav-banner">
-
+					<a class="banner__slide" href="checatPETCARD.html">
+						<img src="images/banneranimals.png" alt="Животные">
+					</a>
+					<a class="banner__slide" href="checatPRODCARD.html" hidden>
+						<img src="images/bannerkorma.png" alt="Корма для питомцев">
+					</a>
+					<a class="banner__slide" href="checatPRODCARD.html" hidden>
+						<img src="images/bannerhomeitems.png" alt="Товары для дома">
+					</a>
+					<a class="banner__slide" href="checatPRODCARD.html" hidden>
+						<img src="images/bannermedicaments.png" alt="Препараты для питомцев">
+					</a>
 				</div>
-				<button class="main__nav-button">
+				<button class="main__nav-button" type="button" data-banner-next aria-label="Следующий баннер">
 					<?xml version="1.0" encoding="utf-8"?>
 					<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
 					<svg width="800px" height="800px" viewBox="-19.04 0 75.804 75.804"
